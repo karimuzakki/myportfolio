@@ -441,6 +441,11 @@ section {
   border-radius: var(--radius);
   padding: 26px 18px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   transition:
     transform 0.3s,
     border-color 0.3s;
@@ -453,7 +458,8 @@ section {
   width: 28px;
   height: 28px;
   stroke: var(--navy);
-  margin-bottom: 12px;
+  flex-shrink: 0;
+  display: block;
 }
 .hobby-card span {
   font-size: 0.88rem;
@@ -578,9 +584,17 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 40px 26px;
+    align-items: center;
+  }
+  .contact-box > div {
+    width: 100%;
   }
   .contact-right {
     align-items: center;
+    width: 100%;
+  }
+  .social-row {
+    justify-content: center;
   }
 }
 
